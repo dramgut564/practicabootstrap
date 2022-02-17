@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resto.</title>
+  <link rel="stylesheet" href="./css/custom.min.css">
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/45/45332.png">
+  
+</head>
+
+<body class="position-relative h-auto overflow-scroll" data-bs-spy="scroll" data-bs-target="#navbar-app" data-bs-offset="0" class="scrollspy-example" tabindex="0" id="inicio">
+  <header>
+    <nav id="navbar-app" class="navbar navbar-expand-lg navbar-light bg-white shadow p-3 mb-5 bg-body rounded sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-primary" href="#"><i class="fa-solid fa-utensils"></i> Resto.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-primary" aria-current="page" href="#inicio"><i
+                  class="fa-thin fa-fork-knife"></i>Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#platos">Platos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#about">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="contacto.html">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide mt-5 pt-5" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+          class="active  bg-secondary" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="bg-secondary"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="bg-secondary"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/home-img-1.png" class="img-fluid d-block mx-auto" alt="...">
+          <div class="carousel-caption bg-black bg-opacity-50 d-none d-md-block">
+            <h3 class="text-white fw-bold">Noodles Picantes</h3>
+            <p class="text-white">Noodles picantes con pollo.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/home-img-2.png" class="img-fluid d-block mx-auto" alt="...">
+          <div class="carousel-caption bg-black bg-opacity-50 d-none d-md-block">
+            <h3 class="text-white fw-bold">Pollo Asados</h3>
+            <p class="text-white">Pollos asados con limón y romero.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/home-img-3.png" class="img-fluid d-block mx-auto" alt="...">
+          <div class="carousel-caption bg-black bg-opacity-50 d-none d-md-block">
+            <h3 class="text-white fw-bold">Pizza</h3>
+            <p class="text-white">Pizza Margarita realizada en horno de leña.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-secondary" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-secondary" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <main class="bg-light" id="principal">
+    <section id="platos">
+      <article>
+        <div class="d-flex flex-column justify-content-center align-items-center gap-4">
+          <h4 class="text-primary mt-5 fw-bold">Nuestros Platos</h4>
+          <h3 id="titulo-platos" class="text-secondary fw-bold">PLATOS POPULARES</h3>
+        </div>
+        <div id="contenedor-tarjetas" class="container-fluid row mx-auto justify-content-center align-items-center">
+          <div class="col-12 col-sm-6 col-md-4 col-xl-2 py-3">
+          <div class="card">
+            <img src="./img/dish-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hamburguesa</h5>
+              <p class="card-text">Hamburguesa hecha a la parrilla con tomate,cebolla,queso cheedar.</p>
+              <span data-bs-toggle="popover" data-bs-placement="right" data-bs-content="¡Producto Añadido!">
+                <button href="#" class="btn btn-secondary text-white">Añadir al carrito</button>
+              </span>
+            </div>
+          </div>
+        </div>
+          <div class="col-12 col-sm-6 col-md-4  col-xl-2 py-3">
+          <div class="card">
+            <img src="./img/dish-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nuggets de pollo</h5>
+              <p class="card-text">Nuggets de pollo crujientes</p>
+              <span data-bs-toggle="popover" data-bs-placement="right" data-bs-content="¡Producto Añadido!">
+                <button href="#" class="btn btn-secondary text-white">Añadir al carrito</button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div id="tarjeta-pollo" class="col-12 col-sm-6 col-md-4 col-xl-2 py-3">
+          <div class="card">
+            <img src="./img/dish-3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pollo asado</h5>
+              <p class="card-text">Pollo asado al limón con romero.</p>
+              <span data-bs-toggle="popover" data-bs-placement="right" data-bs-content="¡Producto Añadido!">
+                <button href="#" class="btn btn-secondary text-white">Añadir al carrito</button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2 py-3">
+          <div class="card">
+            <img src="./img/dish-4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pizza</h5>
+              <p class="card-text">Pizza Margarita hecha en horno de leña.</p>
+              <span data-bs-toggle="popover" data-bs-placement="right" data-bs-content="¡Producto Añadido!">
+                <button href="#" class="btn btn-secondary text-white">Añadir al carrito</button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div id="tarjeta-helado" class="col-12 col-sm-6 col-md-4 col-xl-2 py-3">
+          <div id="tarjeta-helado" class="card">
+            <img src="./img/dish-5.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Helados</h5>
+              <p class="card-text">Helado de nata y chocolate y napolitana de chocolate.</p>
+              <span data-bs-toggle="popover" data-bs-placement="right" data-bs-content="¡Producto Añadido!">
+                <button href="#" class="btn btn-secondary text-white">Añadir al carrito</button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2 py-3">
+          <div class="card">
+            <img src="./img/dish-6.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pollo Frito</h5>
+              <p class="card-text">Pollo Frito crujiente.</p>
+              <span data-bs-toggle="popover" data-bs-placement="right" data-bs-content="¡Producto Añadido!">
+                <button href="#" class="btn btn-secondary text-white">Añadir al carrito</button>
+              </span>
+            </div>
+          </div>
+        </div>
+        </div>
+      </article>
+    </section>
+    <section id="about" class="mt-5">
+      <article class="bg-white">
+        <div class="container-fluid d-lg-flex d-md-grid justify-content-start align-items-center mt-3 gap-5">
+          <div class="text-center">
+            <img class="img-fluid " src="./img/about-img.png" alt="" style="width: 40rem;">
+          </div>
+          <div class="col-12 col-md-12 col-lg-6 col-sm-12">
+            <h4 class="text-primary mt-5 fw-bold text-center">Sobre Nosotros</h4>
+            <h3 class="text-secondary fw-bold text-center">PORQUE ELEGIRNOS?</h3>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Razón #1
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Elaboramos nuestros productos con ingredientes de la más alta calidad.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Razón #2
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Puede disfrutas de nuestros servicios las 24 horas del dia.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Razón #3
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>La entrega de nuestros pedidos en totalmente gratis.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-4 mt-4 mb-5 pb-5">
+              <button type="button" class="btn btn-light text-success border p-2" data-bs-toggle="tooltip"
+                data-bs-placement="top" title="Envio Gratis"><i class="fa-solid fa-truck"></i> Envio Gratis</button>
+              <button type="button" class="btn btn-light text-success  border  p-2" data-bs-toggle="tooltip"
+                data-bs-placement="top" title="Facil de Pagar"><i class="fa-solid fa-dollar-sign"></i>Facil de
+                pagar</button>
+              <button type="button" class="btn btn-light text-success  border  p-2" data-bs-toggle="tooltip"
+                data-bs-placement="top" title="Servicio las 24h"><i class="fa-solid fa-headset"></i> Servicio las
+                24h</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="bg-light p-3">
+    <div class="container-fluid d-lg-flex d-sm-grid text-center justify-content-evenly align-items-center mt-5">
+      <div>
+        <h3 class="text-secondary">Localizaciones</h3>
+        <ul class="row gap-2 list-unstyled p-2">
+          <li>India</li>
+          <li>Japón</li>
+          <li>Rusia</li>
+          <li>USA</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-secondary">Enlaces</h3>
+        <ul class="row gap-2 list-unstyled p-2">
+          <li>Inicio</li>
+          <li>Platos</li>
+          <li>Sobre Nosotros</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-secondary">Siguenos en</h3>
+        <ul class="row gap-2 list-unstyled p-2">
+          <li><i class="fa-brands fa-facebook"></i> Facebook</li>
+          <li><i class="fa-brands fa-twitter"></i> Twitter</li>
+          <li><i class="fa-brands fa-instagram"></i> Instagram</li>
+          <li><i class="fa-brands fa-linkedin"></i> Linkedin</li>
+        </ul>
+      </div>
+  </footer>
+  <button type="button" onclick="topFunction()" class=" btn btn-danger btn-lg" id="botonSubir">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</div>
+
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+  </script>
+  <script src="js/boton.js"></script>
+</html>

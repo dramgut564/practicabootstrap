@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto.</title>
+    <link rel="stylesheet" href="./css/custom.min.css">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/45/45332.png">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar-app"
+            class="navbar navbar-expand-lg navbar-light bg-white shadow p-3 mb-5 bg-body rounded sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand text-primary" href="index.html"><i class="fa-solid fa-utensils"></i> Resto.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-primary" aria-current="page" href="index.html"><i
+                                    class="fa-thin fa-fork-knife"></i>Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="contacto.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <div id="contenedorPaginaInicio" class="container-fluid  bg-light w-75 pt-5 pb-5">
+                    <div class="col">
+                      <p class="display-6 text-center">Contacta con nosotros</p>
+                    </div>
+                    <div class="text-center">
+                    En caso de cualquier problema ocasionado, o cualquier consulta puede ponerse en contacto con nosotros.
+                    </div>
+                    <div class="container-fluid mt-5">
+                        <form id="myForm" class="row g-3" action="https://formsubmit.co/dramgut564@iesmartinezm.es" method="post">
+                            <div class="col-md-4">
+                              <label for="validationServer01" class="form-label">Nombre</label>
+                              <input id="inputNombre" type="text" name="Nombre" class="form-control">
+                              <div class="valid-feedback">
+                                Nombre Correcto!
+                              </div>
+                              <div class="invalid-feedback">
+                                Nombre No Correcto
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <label for="validationServer02" class="form-label">Apellidos</label>
+                              <input id="inputApellidos" type="text" name="Apellidos" class="form-control">
+                              <div class="valid-feedback">
+                                Apellidos Correcto!
+                              </div>
+                              <div class="invalid-feedback">
+                                Apellidos no Correctos
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <label for="validationServerUsername" class="form-label">Email</label>
+                              <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                                <input id="inputEmail" type="text" name="Email" class="form-control" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback">
+                                <div class="valid-feedback">
+                                  Email Correcto!
+                                </div>
+                                <div class="invalid-feedback">
+                                  Email incorrecto
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                                <textarea name="mensaje" id="textAreaMensaje" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <div class="valid-feedback">
+                                    Mensaje Correcto!
+                                  </div>
+                                  <div class="invalid-feedback">
+                                    Mensaje No correcto
+                                  </div>
+                              </div>
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input id="checkBoxTerminos" class="form-check-input" type="checkbox" value=""  aria-describedby="invalidCheck3Feedback">
+                                <label class="form-check-label" for="invalidCheck3">
+                                  Aceptar los terminos y condiciones
+                                </label>
+                                <div class="invalid-feedback">
+                                  ¡Debe aceptar los terminos y condiciones!
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button id="botonEnviar" class="btn btn-primary" type="submit">Enviar</button>
+                              <div id="liveAlertPlaceholder"></div>
+                            </div>
+                          </form>
+                      </div>
+                    </div>
+                  </div>
+            </article>
+        </section>
+    </main>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/formulario.js"></script>
+
+</html>
